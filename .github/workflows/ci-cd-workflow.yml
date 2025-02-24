@@ -27,7 +27,7 @@ jobs:
 
     - name: Run container security scan and remediation
       run: |
-        python container_remediation.py my-app:${{ github.sha }}
+        python claude_remediation.py my-app:${{ github.sha }}
 
     - name: Push remediated image
       run: |
